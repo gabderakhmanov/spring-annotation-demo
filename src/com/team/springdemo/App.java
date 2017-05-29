@@ -14,5 +14,7 @@ public class App {
         Coach theCoach = context.getBean("tennisCoach", Coach.class);
 
         System.out.println(theCoach.getDailyFortune());
+
+        context.close();
     }
 }
